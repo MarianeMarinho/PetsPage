@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+#cabecalho {
+    height: 5rem;
+    display: flex;
+    background-color: rgb(255, 247, 236);
+    border-bottom: 3px solid rgb(0, 6, 61)
+}
+
+#cabecalho #cabecalhotext {
+    display: flex;
+    align-items: center;
+}
+
+#iconpata {
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.textoCabecalho {
+    justify-content: flex-start;
+    padding: 25px;
+    color: #00063d;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#iconescabecalho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+}
+
+#iconescabecalho i {
+    font-size: 22px;
+    padding: 16px;
+}
+
+#telainicial {
+
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 247, 236);
+    display: flex;
+}
+
+#telainicial .apresentacao {
+    text-align: left;
+    padding-left: 5rem;
+}
+
+#telainicial .apresentacao #titulo {
+    margin: 0px;
+
+    padding-left: 10px;
+    padding-bottom: 12px;
+
+    font-size: 42px;
+    font-weight: 900;
+
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 45px;
+
+}
+
+#telainicial .apresentacao #subtitulo {
+    padding-left: 10px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+#telainicial .apresentacao #sessaobusca {
+    display: flex;
+    padding: 10px;
+    margin-top: 15px;
+    flex-direction: row;
+
+}
+
+#telainicial .apresentacao #sessaobusca input {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 800;
+
+
+}
+
+#telainicial .apresentacao #sessaobusca input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+#telainicial .apresentacao #sessaobusca button {
+    cursor: pointer;
+    height: 3rem;
+    width: 8rem;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(240, 76, 16);
+    color: rgb(255, 255, 255);
+    border-radius: 23px;
+}
+
+#telainicial .apresentacao #sessaobusca button:hover {
+    background-color: #fff;
+    color: #f04c10;
+    box-shadow: -2px 8px 67px 17px rgba(254, 129, 5, 0.58);
+
+}
+
+#telainicial .apresentacao #sessaobusca .campobusca {
+    background-color: #fff;
+    display: flex;
+    padding: 0 15px;
+    height: 3rem;
+    width: 22rem;
+    border-radius: 23px;
+    border: none;
+    font-size: 19px;
+    margin-right: 12px;
+    box-shadow: 0px 3px 9px 2px rgba(177, 175, 175, 0.47);
+}
+
+#telainicial .apresentacao #sessaobusca .campobusca i {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+#telainicial .imagemapresentacao {
+    display: flex;
+    padding: 14rem 14rem 14rem 0;
+    position: relative;
+}
+
+#telainicial .imagemapresentacao img {
+    width: 291px;
+    object-fit: cover;
+    height: 388px;
+    border-radius: 1rem;
+
+}
+
+#categorias {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 9rem;
+    display: flex;
+    background-color: rgb(255, 247, 236);
+
+
+}
+
+#categorias .textocategoria {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 51px;
+
+}
+
+#categorias .textocategoria h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #00063d;
+}
+
+#categorias .especiesAnimais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#categorias .especiesAnimais img {
+    padding: 9px;
+    height: 8.5rem;
+    min-width: 160px;
+    object-fit: contain;
+
+    border-radius: 12px;
+
+}
+
+#categorias .especiesAnimais .animais01 {
+    background-color: rgba(251, 229, 197, 0.919);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    border-radius: 12px;
+    max-width: 180px;
+    padding: 0 6px;
+    box-shadow: 0px 3px 9px 2px rgba(177, 175, 175, 0.47);
+}
+
+#categorias .especiesAnimais .animais01:hover {
+    box-shadow: 3px 3px 9px 2px rgba(254, 129, 5, 0.47);
+}
+
+
+#categorias .especiesAnimais .animais01 p {
+    font-size: 23px;
+    font-weight: 800;
+    margin: 14px 0;
+}
+
+#produtos {
+
+    background-color: rgb(255, 247, 236);
+    border: none;
+    padding: 15px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        'ofertasEspeciais produtosMaiscomprados produtosMaiscomprados produtosMaiscomprados'
+        'ofertasEspeciais produtosMaiscomprados produtosMaiscomprados produtosMaiscomprados'
+        'ofertasEspeciais categoriasFavoritas categoriasFavoritas categoriasFavoritas';
+    grid-template-columns: 1fr 3fr;
+    margin: 0;
+
+}
+
+#produtos .container {
+    background-color: rgb(255, 247, 236);
+
+    border: none;
+    margin: 3px;
+
+}
+
+#ofertasEspeciais {
+    grid-area: ofertasEspeciais;
+    padding: 0 13px
+}
+
+#ofertasEspeciais .title {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 3px 9px 2px rgba(177, 175, 175, 0.47);
+
+}
+
+
+#ofertasEspeciais .title p {
+    font-weight: 900;
+    color: #00063d;
+    font-size: 25px;
+    margin-left: 10px;
+
+
+
+
+}
+
+
+#iconpataprodutos {
+
+    align-self: center;
+
+
+}
+
+.card {
+    box-shadow: 0px 3px 9px 2px rgba(177, 175, 175, 0.47);
+    margin: 1rem 0;
+    border-radius: 23px;
+}
+
+.cardpromocao {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d7ffff;
+}
+
+.cardpromocao:nth-child(3) {
+    /* Estilos para o segundo cartão */
+    background-color: rgb(231, 190, 253);
+    /* Adicione os estilos que desejar */
+}
+
+
+.cardpromocao button {
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 900;
+    border: none;
+    background-color: rgb(51, 151, 154);
+    color: #fff;
+
+    cursor: pointer;
+
+}
+
+.cardpromocao:nth-child(3) button {
+    background-color: rgb(121, 34, 243)
+}
+
+
+.textocardpromocao {
+    margin: 2rem 0;
+}
+
+.textocardpromocao h1 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.textocardpromocao h2 {
+    font-size: 12px;
+
+}
+
+.cardpromocao img {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #fa9134;
+    padding: 10px;
+
+}
+
+.cardpromocao:nth-child(3) img {
+    background-color: rgb(21, 134, 255);
+}
+
+#imagemcachorro {
+    display: inline-block;
+    position: relative;
+
+
+}
+
+
+#textooff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -18px;
+
+    right: -38px;
+    height: 5rem;
+    width: 5rem;
+
+    background-color: rgb(51, 151, 154);
+    border-radius: 4.5rem;
+
+
+}
+
+#textooff p {
+    align-self: center;
+    justify-self: center;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fcf8f8;
+
+}
+
+#cronometro {
+    background-color: #00063d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 2px 3px 9px 2px rgba(233, 232, 232, 0.47);
+
+}
+
+#textocrono {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 22px;
+}
+
+#textocrono h1 {
+    font-size: 21px;
+    color: #fcff31;
+    font-weight: 800;
+    padding: 0 0 4px;
+
+
+}
+
+#textocrono h2 {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 800;
+
+
+
+}
+
+#numeroscronometro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#numeroscronometro p {
+    color: #ffffff;
+
+}
+
+#numeroscronometro .numeros {
+    display: flex;
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 12px;
+    color: #ff7802;
+    font-weight: 900;
+    min-width: 26px;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+
+
+}
+
+
+#produtosMaiscomprados {
+    grid-area: produtosMaiscomprados;
+
+
+}
+
+#produtosMaiscomprados {
+    padding: 0 35px;
+
+}
+
+#produtosMaiscomprados .title {
+
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 3px 9px 2px rgba(177, 175, 175, 0.47);
+
+}
+
+#produtosMaiscomprados .title p {
+    font-weight: 900;
+    color: #00063d;
+    font-size: 25px;
+    margin-left: 10px;
+
+
+
+
+}
+
+
+.linhaCard {
+    display: flex;
+
+    justify-content: space-between;
+
+
+
+}
+
+.imagemProdutos img {
+    height: 12rem;
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+.descricaoProduto {
+    font-size: 19px;
+    padding: 12px;
+    border-radius: 0 0px 12px 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.descricaoProduto h3 {
+    font-size: 17px;
+}
+
+.descricaoProduto p {
+    font-size: 14px;
+    color: #ff7802;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.descricaoProduto i {
+    margin-left: 11px;
+    color: #bcb9b9;
+}
+
+#produtos #produtosMaiscomprados .card {
+    background: #fff;
+}
+
+#produtos .card:hover i {
+    color: #f00;
+    animation: pulse 1s ease infinite;
+}
+
+#categoriasFavoritas {
+    grid-area: categoriasFavoritas;
+    padding: 0 35px;
+
+}
+
+#categoriasFavoritas .title {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 3px 9px 2px rgba(177, 175, 175, 0.47);
+}
+
+#categoriasFavoritas .title p {
+    font-weight: 900;
+    color: #00063d;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.linhaCardcategorias {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.linhaCardcategorias .imagemCategorias {
+    display: flex;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    background-repeat: no-repeat;
+    width: 30rem;
+    gap: 2rem;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.linhaCardcategorias .imagemCategorias::before {
+    border-radius: 23px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    /* Altere para a URL da sua imagem */
+    opacity: 1;
+    /* Opacidade padrão */
+    transition: opacity 0.3s;
+    /* Efeito de transição suave */
+}
+
+.linhaCardcategorias .imagemCategorias:first-child:before {
+    background-image: url('img/acessoriospet.jpg');
+}
+
+.linhaCardcategorias .imagemCategorias:last-child:before {
+    background-image: url('img/gatoacessorios.webp');
+}
+
+.linhaCardcategorias .imagemCategorias:hover::before {
+    opacity: 0.5;
+    /* Opacidade ao passar o mouse */
+}
+
+.imagemCategorias button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3rem;
+    width: 7rem;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(240, 76, 16);
+    color: rgb(255, 255, 255);
+    border-radius: 36px;
+    display: none;
+    cursor: pointer;
+}
+
+.imagemCategorias:hover button {
+    display: block;
+    opacity: 1;
+
+}
+
+.imagemCategorias img {
+
+    height: 18rem;
+    padding: 7px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+#blogger {
+    padding: 1rem;
+    background-color: rgba(255, 234, 207, 0.881);
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+#blogger .cards {
+    display: flex;
+    gap: 2rem;
+}
+
+#blogger .cards .card {
+    max-width: 20rem;
+    background: #fff;
+}
+
+#blogger .cards .descricao .texto h1 {
+    margin: 1rem 0.75rem 0.5rem;
+    font-size: 18px;
+}
+
+#blogger .cards .descricao .texto p {
+    margin: 0 0.75rem 0.5rem;
+    font-size: 12px;
+}
+
+.tituloblog {
+    margin: 2rem 0;
+}
+
+.tituloblog p {
+    font-size: 31px;
+    font-weight: 900;
+    color: #00063d;
+
+}
+
+.imagemBlog img {
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+#rodape {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    background-color: rgba(252, 217, 167, 0.881);
+    padding: 20px;
+}
+
+#iconesrodape i {
+    font-size: 19px;
+    padding: 0 10px 0 0
+}
+
+.textorodape {
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: row;
+}
+
+#rodape #divisoria {
+    display: flex;
+    justify-content: center;
+}
+
+#rodape hr {
+    height: 2px;
+    margin: 2rem;
+    width: 70rem;
+    background-color: #00063d;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff7ec;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #00063d;
+    border-radius: 8px;
+    border: 4px solid #00063d;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
